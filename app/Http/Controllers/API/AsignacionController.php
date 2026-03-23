@@ -30,7 +30,7 @@ class AsignacionController extends Controller
         return $asignacion;
     }
 
-    public function destroy($id)
+    public function destroy($id)  
     {
         Asignacion::destroy($id);
         return response()->json(['message' => 'Asignación eliminada']);
